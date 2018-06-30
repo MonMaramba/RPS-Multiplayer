@@ -3,11 +3,22 @@
     height: 80%;
     border: 2px solid black;
 }
+
+.input-group {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    left: 25%;
+    
+}
 .well {
     border: 2px solid black;
     border-radius: 10px;
     height: 100%;
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 .form-group {
@@ -18,4 +29,8 @@
 .row {
     margin-top: 10px;
     border-radius: 10px;
+}
+
+p {
+    font-size: 23px;
 }
