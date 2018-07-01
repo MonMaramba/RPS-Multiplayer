@@ -5,13 +5,19 @@
 }
 
 .input-group {
+    display: inline-block; 
     width: 50%;
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
-    position: relative;
+    position: absolute;
     left: 25%;
+    padding-bottom: 10px;
     
+}
+
+#maingame {
+    margin-top: 8%;
 }
 .well {
     border: 2px solid black;
