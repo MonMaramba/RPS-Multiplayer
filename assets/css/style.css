@@ -40,3 +40,10 @@
 p {
     font-size: 23px;
 }
+
+.rpsbutton {
+    display: block;
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+}

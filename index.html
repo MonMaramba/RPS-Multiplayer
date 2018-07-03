@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RPS Multiplayer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
    
@@ -37,11 +39,10 @@
                   </div>   
                 <div class="row" id="maingame">
                   <div class="col-sm-4">
-                        <div class="well">
-                       <h1>Player 1</h1>
-                       <p>Rock</p>
-                       <p>Paper</p>
-                       <p>Scissors</p>
+                        <div class="well" id="p1">
+                          <div id="playa1"><h1>Player 1</h1></div>
+                       <div id="buttonsHere"></div>
+                       
                         </div>
                   </div>
                   <div class="col-sm-4 text-center"> 
@@ -50,11 +51,12 @@
                 </div>                    
                   </div>
                   <div class="col-sm-4">
-                    <div class="well">
-                      <h1>Player 2</h1>
-                      <p>Rock</p>
-                       <p>Paper</p>
-                       <p>Scissors</p>
+                    <div class="well" id="p2">
+                        <div class="well" id="p1">
+                            <div id="playa1"><h1>Player 2</h1></div>
+                         <div id="buttonsThere"></div>
+                         
+                          </div>
                     </div>
                   </div>
                   

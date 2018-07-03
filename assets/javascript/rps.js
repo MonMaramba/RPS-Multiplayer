@@ -20,12 +20,15 @@ var rps = ["Rock", "Paper", "Scissors"];
 var buttonHolder = $('<div>');
 
 function renderButtons() {
-    for (i=0; i < rps.length; i++);
+    for (i=0; i < rps.length; i++) {
     var button = $('<button>' + rps[i] + '</button>');
-    button.addClass("button");
+    button.addClass("rpsbutton");
     button.text(rps[i]);
-    $(buttonHolder).append(button);
-    };
+    buttonHolder.append(button);
+    $("#buttonsHere").append(buttonHolder)
+    }
+};
+    
 
 //variables for name wins and losses and comment for chat box
     var name = "";
@@ -57,26 +60,31 @@ function renderButtons() {
         nameArr.push(name);
 
         //Clears name-submit box
-        $("#name-submit").val().trim();
+        $("#name-submit").val("");
 
      player1 = nameArr[0];
      player2 = nameArr[1];
+
+     
 
      if (nameArr.length === 2) {
         $(".input-group").hide();
      }
 
+     console.log("Player 2 will be " + player2);
+        console.log("Player 1 will be " + player1);
+
+        renderButtons();
     //function to establish presence of both players
     
-    /*for (i=0; i< nameArr; i++) {
+    /*for (ii=0; ii< nameArr; ii++) {
         
-    }*/
-        console.log("Player 2 will be " + player2);
-        console.log("Player 1 will be " + player1);
+    }
             
     });
 
  //Function to establish presence
+
  /*
  // Fetch the current user's ID from Firebase Authentication.
 var uid = firebase.auth().currentUser.uid;
@@ -128,9 +136,7 @@ firebase.database().ref('.info/connected').on('value', function(snapshot) {
 
 database.ref().on("child_added", function(childSnapshot){
     player1 = childSnapshot.val().name;
-    console.log(player1);
-    console.log(nameArr);
-}, function(errorObject) {
+    }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
     });
 
@@ -143,4 +149,6 @@ database.ref().on("child_added", function(childSnapshot){
 //chat window
 
 
+    });
 
+    
